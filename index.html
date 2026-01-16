@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDEN LABORATORY - 당신의 새로운 내일</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Noto Sans KR', sans-serif;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.9);
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: #fff;
+        }
+        .logo span { color: #00ffcc; }
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #888;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            animation: slideUp 2s ease-in-out;
+        }
+        
+        .cta-btn {
+            padding: 15px 40px;
+            border: 1px solid #00ffcc;
+            background: transparent;
+            color: #00ffcc;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+        
+        .cta-btn:hover {
+            background: #00ffcc;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 100px 50px;
+            background: #111;
+            border-top: 1px solid #222;
+        }
+        
+        .stat-item h3 {
+            font-size: 3rem;
+            margin: 0;
+            color: #fff;
+        }
+        .stat-item p {
+            color: #666;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .philosophy {
+            padding: 100px 20%;
+            text-align: left;
+            background: #0a0a0a;
+        }
+        
+        .philosophy h2 {
+            font-size: 2rem;
+            border-left: 4px solid #00ffcc;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .warning {
+            font-size: 0.8rem;
+            color: #444;
+            text-align: center;
+            padding: 50px;
+            border-top: 1px solid #222;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">EDEN <span>LAB</span></div>
+        <nav style="font-size: 0.9rem; color: #888;">
+            PROJECT: GENESIS / RESEARCH / VOLUNTEER
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>한계를 넘어서는<br>완벽한 치유의 시작</h1>
+        <p>
+            인간은 나약하게 태어났습니다. 하지만 그 끝이 나약할 필요는 없습니다.<br>
+            에덴 연구소는 인류가 가진 유전적 한계를 극복하고,<br>
+            새로운 진화를 이끌어낼 선구자를 찾고 있습니다.
+        </p>
+        <a href="#" class="cta-btn">지원하기 (VOLUNTEER)</a>
+    </section>
+
+    <div class="stats">
+        <div class="stat-item">
+            <h3>∞</h3>
+            <p>POTENTIAL</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>SECURITY</p>
+        </div>
+        <div class="stat-item">
+            <h3>Top</h3>
+            <p>CLASS CARE</p>
+        </div>
+    </div>
+
+    <section class="philosophy">
+        <h2>우리의 약속</h2>
+        <p style="color: #aaa; line-height: 1.8;">
+            에덴 연구소의 '제네시스 프로젝트'에 참여하는 모든 지원자에게는 
+            국가 공인 최고 수준의 의료 서비스와 막대한 보상이 주어집니다. <br><br>
+            당신의 희생은 헛되지 않습니다. 당신은 실험체가 아닌, 
+            인류 진화의 <strong style="color: #fff;">개척자</strong>가 될 것입니다.
+            고통은 순간이지만, 위대한 유산은 영원히 남습니다.
+        </p>
+    </section>
+
+    <div class="warning">
+        © 2024 EDEN LABORATORY. All rights reserved.<br>
+        본 프로젝트의 세부 내용은 기밀 유지 서약에 의거하여 외부에 공개될 수 없습니다.<br>
+        지원자는 신체 포기 각서 및 면책 동의서에 서명한 것으로 간주됩니다.
+    </div>
