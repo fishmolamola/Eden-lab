@@ -125,6 +125,26 @@
             from { transform: translateY(20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+        /* --- 모바일 수리 키트 시작 --- */
+        * { box-sizing: border-box; } /* 테두리 포함해서 크기 계산 (삐져나감 방지) */
+        
+        @media (max-width: 768px) {
+            header { padding: 15px 20px; } /* 헤더 여백 줄이기 */
+            .logo { font-size: 20px; }
+            
+            .hero h1 { font-size: 2rem; } /* 큰 제목 글자 크기 줄이기 */
+            .hero p { font-size: 1rem; padding: 0 20px; } /* 본문 여백 주기 */
+            
+            .stats { 
+                flex-direction: column; /* 가로 정렬을 세로 정렬로 변경 */
+                padding: 50px 20px;
+                gap: 40px; /* 간격 띄우기 */
+            }
+            
+            .philosophy { padding: 60px 20px; } /* 설명칸 여백 줄이기 */
+            .philosophy h2 { font-size: 1.5rem; }
+        }
+        /* --- 모바일 수리 키트 끝 --- */
     </style>
 </head>
 <body>
