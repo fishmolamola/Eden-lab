@@ -128,6 +128,23 @@
             background: #fff;
             box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
         }
+        /* --- 모바일 수리 키트 시작 --- */
+        * { box-sizing: border-box; }
+        
+        @media (max-width: 768px) {
+            .form-container {
+                width: 90%; /* 화면 꽉 차지 않게 */
+                padding: 30px 20px; /* 내부 여백 줄이기 */
+                margin: 20px 0; /* 위아래 여백 주기 */
+            }
+            
+            .form-header h1 { font-size: 1.5rem; } /* 제목 줄이기 */
+            .form-header p { word-break: keep-all; } /* 단어 단위로 줄바꿈 */
+            
+            .agreement { padding: 15px; }
+            .checkbox-container label { font-size: 0.9rem; }
+        }
+        /* --- 모바일 수리 키트 끝 --- */
     </style>
 </head>
 <body>
